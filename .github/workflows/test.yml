@@ -8,7 +8,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
-      - uses: DariaLeskavets/auditor_runner/.github/workflows/auditor-runner.yml@add_action
+      - name: Run audit
+        uses: DariaLeskavets/auditor_runner/.github/workflows/auditor-runner.yml@add_action
         with:
           PORTAL_TOKEN: ${{ secrets.PORTAL_TOKEN }}
           PORTAL_URL: ${{ secrets.PORTAL_URL }}
