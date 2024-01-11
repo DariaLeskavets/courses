@@ -4,7 +4,7 @@ on: workflow_dispatch
 
 jobs:
   runner:
-    uses: DariaLeskavets/auditor_runner/.github/workflows/auditor-runner.yml@main
+    uses: DariaLeskavets/auditor_runner/.github/workflows/auditor_runner.yml@main
     with:
       PORTAL_TOKEN: ${{ secrets.PORTAL_TOKEN }}
       PORTAL_URL: ${{ secrets.PORTAL_URL }}
